@@ -69,8 +69,7 @@ async function hacerPrestamo(m: Mostrador, hoy: Date): Promise<void> {
 }
 
 async function main(): Promise<void> {
-  const { libros, descartados } = cargarCatalogo('../datos/catalogo.json');
-
+  const { libros, descartados } = cargarCatalogo('datos/catalogo.json');
   console.log('\n  ===  MOSTRADOR DE LA BIBLIOTECA  ===\n');
   console.log(`  ${libros.length} libros cargados.`);
   if (descartados > 0) {
@@ -82,7 +81,7 @@ async function main(): Promise<void> {
   const hoy = new Date();
   const m: Mostrador = { libros, prestamos: [] };
 
-  for (;;) {
+  for (; ;) {
     const elegido = await pedirOpcion('¿Qué se va a hacer?', OPCIONES);
 
     // Ctrl+C llega hasta aquí como undefined.

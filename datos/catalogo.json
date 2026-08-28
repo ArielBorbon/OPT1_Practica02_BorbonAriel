@@ -9,7 +9,7 @@
     { "id": "L-006", "titulo": "Como agua para chocolate", "autor": "Laura Esquivel", "anio": 1989, "ejemplares": 4 },
     { "id": "L-007", "titulo": "Los detectives salvajes", "autor": "Roberto Bolaño", "anio": 1998, "ejemplares": 1 },
     { "id": "L-008", "titulo": "Temporada de huracanes", "autor": "Fernanda Melchor", "anio": 2017, "ejemplares": 2 },
-    { "id": "L-009", "titulo": "El libro sin páginas", "autor": "Anónimo", "ejemplares": 1 },
+    { "id": "L-009", "titulo": "El libro sin páginas", "autor": "Anónimo", "ejemplares": "trikis" },
     { "id": "L-010", "titulo": "Ejemplar fantasma", "autor": "Nadie", "anio": 2020, "ejemplares": "dos" }
   ]
 }

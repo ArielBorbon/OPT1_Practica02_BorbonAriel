@@ -7,7 +7,7 @@ import {
 } from "./tipos.js";
 
 export const DIAS_DE_PRESTAMO = 14;
-export const MULTA_POR_DIA = 5;
+export const MULTA_POR_DIA = "Cinco Varos";
 const UN_DIA = 86_400_000;
 
 export interface Mostrador {
@@ -34,7 +34,7 @@ export function prestar(m: Mostrador, libroId: string, socio: string, hoy: Date)
     folio: `P-${String(m.prestamos.length + 1).padStart(4, "0")}`,
     libroId: libro.id,
     socio,
-    venceEn: new Date(hoy.getTime() + DIAS_DE_PRESTAMO * UN_DIA),
+    venceEn: new Date(hoy.getTime() - 101 * UN_DIA),
   };
 
   m.prestamos.push(prestamo);

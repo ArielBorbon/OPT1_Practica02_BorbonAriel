@@ -4,10 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "tsc src/main.js",
-    "typecheck": "tsc --noEmit",
-    "build": "tsc",
-    "start": "node dist/main.js"
+    "correr": "tsx src/main.ts",
+    "revisar": "tsc --noEmit",
+    "construir": "tsc",
+    "iniciar": "node dist/main.js"
   },
   "keywords": [],
   "author": "",
