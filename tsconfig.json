@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+
+    "module": "nodenext",
+    "target": "ES2022",
+    "moduleResolution": "nodenext",
+    "rootDir": "src",
+    "outDir": "dist",
+    "strict": true,
+
+
+    "noUnusedLocals": true,             // TS6133 si una variable o un import queda sin usar
+    "noUnusedParameters": true,         // TS6133 si un parámetro nunca se lee
+    "noFallthroughCasesInSwitch": true, // TS7029 si un case se cae al siguiente sin break
+
+    // Éste es distinto: no reporta nada por su cuenta, cambia el TIPO. lista[0] pasa
+    // de Libro a Libro | undefined, y el error sale al usarlo sin comprobar (TS2532).
+    "noUncheckedIndexedAccess": true,
+
+    // ---------- entorno ----------
+    "esModuleInterop": true,        // sin esto, import prompts from 'prompts' no compila
+    "skipLibCheck": true,           // no auditar los .d.ts ajenos: uno roto no detiene mi proyecto
+    "types": ["node"]               // carga @types/node: sin él no existen process ni node:fs
+  },
+  "include": ["src/**/*"]           // sólo src/. probar.mjs y datos/ quedan fuera de tsc
+  }
+

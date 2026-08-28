@@ -1,0 +1,15 @@
+{
+  "biblioteca": "Biblioteca del Campus · ITSON",
+  "libros": [
+    { "id": "L-001", "titulo": "El Aleph", "autor": "Jorge Luis Borges", "anio": 1949, "ejemplares": 2 },
+    { "id": "L-002", "titulo": "Pedro Páramo", "autor": "Juan Rulfo", "anio": 1955, "ejemplares": 3 },
+    { "id": "L-003", "titulo": "Cien años de soledad", "autor": "Gabriel García Márquez", "anio": 1967, "ejemplares": 1 },
+    { "id": "L-004", "titulo": "La región más transparente", "autor": "Carlos Fuentes", "anio": 1958, "ejemplares": 2 },
+    { "id": "L-005", "titulo": "Balún Canán", "autor": "Rosario Castellanos", "anio": 1957, "ejemplares": 1 },
+    { "id": "L-006", "titulo": "Como agua para chocolate", "autor": "Laura Esquivel", "anio": 1989, "ejemplares": 4 },
+    { "id": "L-007", "titulo": "Los detectives salvajes", "autor": "Roberto Bolaño", "anio": 1998, "ejemplares": 1 },
+    { "id": "L-008", "titulo": "Temporada de huracanes", "autor": "Fernanda Melchor", "anio": 2017, "ejemplares": 2 },
+    { "id": "L-009", "titulo": "El libro sin páginas", "autor": "Anónimo", "ejemplares": 1 },
+    { "id": "L-010", "titulo": "Ejemplar fantasma", "autor": "Nadie", "anio": 2020, "ejemplares": "dos" }
+  ]
+}
